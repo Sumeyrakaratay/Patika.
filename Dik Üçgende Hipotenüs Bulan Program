@@ -1,0 +1,13 @@
+	int a, b;
+	double c;
+
+	Scanner input = new Scanner(System.in);
+	System.out.print("Üçgenin 1.Kenarını Giriniz: ");
+	a = input.nextInt();
+
+	System.out.print("Üçgenin 2. Kenarını Giriniz: ");
+	b = input.nextInt();
+
+	c = Math.sqrt((a*a) + (b*b));
+
+	System.out.println("Hipotenis: "+c);
