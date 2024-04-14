@@ -1,0 +1,35 @@
+public static void main(String[] args) {
+
+	Scanner input = new Scanner(System.in);
+
+	double math, fizik, kimya, türkce, tarih, müzik;
+
+	System.out.print("Matematik dersinden aldığınız notu giriniz: ");
+	math = input.nextDouble();
+
+	System.out.print("Fizik dersinden aldığınız notu giriniz: ");
+	fizik = input.nextDouble();
+
+	System.out.print("Kimya dersinden aldığınız notu giriniz: ");
+	kimya = input.nextDouble();
+
+	System.out.print("Türkçe dersinden aldığınız notu giriniz: ");
+	türkce = input.nextDouble();
+
+	System.out.print("Tarih dersinden aldığınız notu giriniz: ");
+	tarih = input.nextDouble();
+
+	System.out.print("Müzik dersinden aldığınız notu giriniz: ");
+	müzik = input.nextDouble();
+
+	double toplam = (math + fizik + kimya + türkce + tarih + müzik);
+	double sonuc = toplam/6.0;
+
+	System.out.println("Not Ortalamanız: "+sonuc);
+
+	if (sonuc>60) {
+		System.out.println("Sınıfı Geçtiniz");
+	}else
+		System.out.println("Sınıfta Kaldınız");
+
+}
