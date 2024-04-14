@@ -1,0 +1,13 @@
+	int km;
+	float kmtütari = 2.20f, toplam, ücret;
+
+	 Scanner scanner = new Scanner(System.in);
+	 System.out.print("Mesafeyi KM Cinsinden Giriniz: ");
+	 km = scanner.nextInt();
+	 toplam = km*kmtütari;
+	 ücret = toplam+10;
+
+	 if (ücret<20) {
+		 System.out.println("Ücret 20 Türk Lirasıdır.");
+	 }else
+		 System.out.println("Ücret "+ ücret + " Türk Lirasıdır.");
