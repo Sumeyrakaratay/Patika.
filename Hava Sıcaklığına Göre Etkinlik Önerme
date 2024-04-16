@@ -1,0 +1,33 @@
+public static void main(String[] args) {
+
+	Scanner inp = new Scanner(System.in);
+
+	int heat;
+	boolean option1, option2, option3;
+
+	System.out.print("Sıcaklık Derecesini Giriniz : ");
+	heat = inp.nextInt();
+
+	option1 = heat <= 5;
+	option2 = (heat > 5) && (heat <= 15);
+	option3 = (heat > 15) && (heat <= 25);
+
+	if (option1) {
+
+		System.out.println("Kayak Yapabilirisiniz");
+
+	}else if (option2){
+
+		System.out.println("Sinemaya Gidebilirsiniz");
+
+	}else if (option3) {
+
+		System.out.println("Piknik Yapabilirsiniz");
+
+	}else {
+
+		System.out.println("Yüzmeye Gidebilirsiniz");
+
+	 }
+
+ }
