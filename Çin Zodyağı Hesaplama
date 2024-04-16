@@ -1,0 +1,63 @@
+public static void main(String[] args) {
+
+	Scanner inp = new Scanner(System.in);
+
+	int birthYear, burcSonucu;
+
+	System.out.println("Doğum Yılınızı Giriniz : ");
+	birthYear = inp.nextInt();
+
+
+	if ((birthYear%12) == 0) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Maymun'");
+
+	}if ((birthYear%12) == 1) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Horoz'");
+
+	}if ((birthYear%12) == 2) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Köpek'");
+
+	}if ((birthYear%12) == 3) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Domuz'");
+
+	}if ((birthYear%12) == 4) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Fare'");
+
+	}if ((birthYear%12) == 5) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Öküz'");
+
+	}if ((birthYear%12) == 6) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Kaplan'");
+
+	}if ((birthYear%12) == 7) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Tavşan'");
+
+	}if ((birthYear%12) == 8) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Ejderha'");
+
+	}if ((birthYear%12) == 9) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Yılan'");
+
+	}if ((birthYear%12) == 10) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'At'");
+
+	}if ((birthYear%12) == 11) {
+
+		System.out.println("Çin Zodyağı Burcunuz : 'Koyun'");
+
+	}else if ((birthYear%12) > 11) {
+
+		System.out.println("Hatalı Giriş Yaptınız");
+	 }
+ }
