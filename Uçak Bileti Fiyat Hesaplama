@@ -1,0 +1,87 @@
+public static void main(String[] args) {
+
+	Scanner inp = new Scanner(System.in);
+
+
+	double total, km, normalTütar, yasIndirimi, gidisDonüsIndirim;
+	int age, tripType;
+
+	System.out.print("Yolculuğunuzdaki Mesafeyi KM Türünden Giriniz: ");
+	km = inp.nextFloat();
+
+	System.out.print("Yaşınızı Giriniz: ");
+	age = inp.nextInt();
+
+	System.out.print("1) Tek Yön\\n2) Gidiş-Dönüş\\nTercih Edeceğiniz Yolculuk Türünü Seçiniz: ");
+	tripType =inp.nextInt();
+
+	normalTütar = km * 0.10;
+
+
+
+
+	if (age<12) {
+
+		yasIndirimi = normalTütar * 0.50;
+
+			if (tripType == 2) {
+
+
+				gidisDonüsIndirim = normalTütar * 0.20;
+
+				total = normalTütar - (yasIndirimi + gidisDonüsIndirim);
+
+				System.out.println("Toplam Bilet Tutarınız : " + total);
+
+			}else {
+
+
+				total = normalTütar - yasIndirimi;
+
+				System.out.println("Toplam Bilet Tutarınız : " + total);
+			}
+
+
+
+	}if ((12<=age) && (age<=22)) {
+
+		yasIndirimi = normalTütar * 0.10;
+
+			if (tripType == 2) {
+
+
+				gidisDonüsIndirim = normalTütar * 0.20;
+
+				total = normalTütar - (yasIndirimi + gidisDonüsIndirim);
+
+				System.out.println("Toplam Bilet Tutarınız : " + total);
+
+			}else {
+
+
+				total = normalTütar - yasIndirimi;
+
+				System.out.println("Toplam Bilet Tutarınız : " + total);
+			}
+	}if (65<=age) {
+
+		yasIndirimi = normalTütar * 0.30;
+
+			if (tripType == 2) {
+
+
+				gidisDonüsIndirim = normalTütar * 0.20;
+
+				total = normalTütar - (yasIndirimi + gidisDonüsIndirim);
+
+				System.out.println("Toplam Bilet Tutarınız : " + total);
+
+			}else {
+
+
+				total = normalTütar - yasIndirimi;
+
+				System.out.println("Toplam Bilet Tutarınız : " + total);
+			}
+		}
+	}
