@@ -1,0 +1,40 @@
+public static void main(String[] args) {
+
+	String userName, password, newPassword, yesNo;
+	String userName1 = "patika", password1 = "Java123";
+
+	Scanner inp = new Scanner(System.in);
+	System.out.print("Kullanıcı Adınızı Giriniz : ");
+	userName = inp.nextLine();
+
+	System.out.print("Şifrenizi Giriniz : ");
+	password = inp.nextLine();
+
+	if(userName.equals(userName1) && password.equals(password1)) {
+
+		System.out.println("Başarılı Bir Şekilde Giriş Yaptınız");
+
+	}else
+
+	{
+		if (userName.equals(userName1)==false) {
+
+			System.out.println("Kullanıcı Adınızı Hatalı Girdiniz");
+		}else {
+
+			System.out.println("Şifrenizi Hatalı Girdiniz\\nSıfırlamak İster Misiniz?\\n1-Evet\\n2-Hayır");
+			yesNo = inp.nextLine();
+			if (yesNo.equals("Evet")){
+
+
+					System.out.println("Yeni Şifrenizi Giriniz : ");
+					newPassword = inp.nextLine();
+
+					System.out.print(!(newPassword==password1 && newPassword == password)? "Şifre oluşturulamadı, lütfen başka şifre giriniz.": "Şifre oluşturuldu");
+                    password1=newPassword;
+
+			}
+		}
+
+	}
+}
