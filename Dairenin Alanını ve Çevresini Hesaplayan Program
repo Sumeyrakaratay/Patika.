@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+
+
+	double radius, angle, area, PI = 3.14;
+	Scanner input = new Scanner(System.in);
+
+	System.out.print("Dairenin Yarı Çapını Giriniz: ");
+	radius = input.nextDouble();
+
+	System.out.print("Daire Diliminin Açı Ölçüsünü Giriniz: ");
+	angle = input.nextDouble();
+
+	area = (PI * radius * radius * angle) / 360;
+
+	System.out.println("Daire Diliminin Alanı: "+area);
