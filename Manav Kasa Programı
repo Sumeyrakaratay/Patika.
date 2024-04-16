@@ -1,0 +1,31 @@
+public static void main(String[] args) {
+
+	double armutFiyat = 2.14, elmaFiyat = 3.67,
+		   domatesFiyat = 1.11, müzFiyat = 0.95, patlıcanFiyat = 5.00,
+	       armutKg, elmaKg, domatesKg, müzKg, patlicanKg, toplamTütar;
+
+	Scanner input = new Scanner(System.in);
+
+	System.out.print("Kaç Kilo Armut Aldınız: ");
+	armutKg = input.nextDouble();
+
+	System.out.print("Kaç Kilo Elma Aldınız: ");
+	elmaKg = input.nextDouble();
+
+	System.out.print("Kaç Kilo Domates Aldınız: ");
+	domatesKg = input.nextDouble();
+
+	System.out.print("Kaç Kilo Muz Aldınız: ");
+	müzKg = input.nextDouble();
+
+	System.out.print("Kaç Kilo Patkıcan Aldınız: ");
+	patlicanKg = input.nextDouble();
+
+
+	toplamTütar = (armutFiyat * armutKg)
+            + (elmaFiyat * elmaKg)
+            + (domatesFiyat * domatesKg)
+            + (müzFiyat * müzKg)
+            + (patlıcanFiyat * patlicanKg);
+    System.out.println("Toplam Tutarınız : " + toplamTütar + " TL");
+}
