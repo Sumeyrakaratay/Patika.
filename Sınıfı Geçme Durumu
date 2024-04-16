@@ -1,0 +1,54 @@
+public static void main(String[] args) {
+
+
+	float mat, fizik, türkce, kimya, müzik, average;
+
+	Scanner inp = new Scanner(System.in);
+
+	System.out.println("Ders Notlarınızı Giriniz:");
+	System.out.print("Matematik : ");
+
+			mat = inp.nextFloat();
+
+    System.out.print("Fizik : ");
+
+			fizik = inp.nextFloat();
+
+	System.out.print("Türkçe : ");
+
+			türkce = inp.nextFloat();
+
+    System.out.print("Kimya : ");
+
+			kimya = inp.nextFloat();
+
+	System.out.print("Müzik : ");
+
+			müzik = inp.nextFloat();
+
+	average = (mat + fizik + türkce + kimya + müzik)/5;
+
+
+	if ((mat<100) && (fizik<100) && (türkce<100) && (kimya<100) && (müzik<100)) {
+
+		  	if(average>55 && average<=100) {
+
+		  	System.out.println("Tebrikler, Sınıfı Geçtiniz");
+		  	System.out.println("Ortalamaniz : " + average);
+
+		  	}
+
+
+	}else if ((mat>100) || (fizik>100) || (türkce>100) || (kimya>100) || (müzik>100)) {
+
+			System.out.println("Notlarınızı 0 ile 100 Arasında Tekrar Giriniz");
+
+	}if (average<55 && average<=100) {
+
+			System.out.println("Sınıfta Kaldınız, Seneye Tekrar Görüşmek Üzere");
+			System.out.println("Ortalamanız : " + average);
+
+	 }
+
+  }
+  
