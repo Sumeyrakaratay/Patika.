@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class fonksiyonlar {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner inp = new Scanner(System.in);
+		
+		System.out.print("Sayı Giriniz : ");
+		int number = inp.nextInt();
+		int basNumber = 0, tempNumber = number;
+		int basValue, result = 0;
+		
+		//Bir Tam Sayının Basamak Sayısını Bulma
+		
+		while (tempNumber !=  0) {
+			tempNumber /= 10;
+			basNumber++;
+		}
+		
+		tempNumber = number;
+		System.out.println(basNumber + " Basamaklı Bir Sayı");
+		
+		while (tempNumber!= 0) {
+			basValue = tempNumber % 10;
+			System.out.println(basValue);
+			tempNumber /= 10;
+			
+			result += basValue;
+			
+		}
+		System.out.print("Basamak Sayıları Toplamı : " + result);
+	}
+}
