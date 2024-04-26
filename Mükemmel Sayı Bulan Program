@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class fonksiyonlar {
+
+	public static void main(String[] args) {
+		
+		Scanner inp = new Scanner(System.in);
+		int number, reply = 0;
+        
+
+        System.out.print("Enter a Number : ");
+        number = inp.nextInt();
+        
+        for (int i = 1; i < number; i++) {
+        	
+            if (number % i == 0)
+            	
+                reply += i;
+        }
+        
+        if (reply == number) {
+        	
+            System.out.print(number + " a Perfect Number");
+        }
+        
+        else {
+        	
+        	  System.out.print(number + " Not a Perfect Number");
+        }
+	  }
+}
