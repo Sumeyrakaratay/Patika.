@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+public class fonksiyonlar {
+
+	public static void main(String[] args) {
+		
+		Scanner inp = new Scanner(System.in);
+		String userName, password;
+		int right = 3, request;
+		double price, balance = 1500;
+		
+		while ( right > 0) {
+			
+			System.out.print("Kullanıcı Adınızı Giriniz : ");
+			userName = inp.nextLine();
+			
+			System.out.print("Şifrenizi Giriniz : ");
+			password = inp.nextLine();
+			
+			if ((userName.equals("Patika") && (password.equals("dev123")))){
+					System.out.println("Kodluyoruz Bankasına Hoşgeldiniz");
+				
+				do {
+					System.out.println("1-Para Yatırma\n"
+						+ "2-Para Çekme\n"
+						+ "3-Bakiye Sorgulama\n"
+						+ "4-Çıkış Yap");
+					System.out.println("Lütfen Yapmak İstediğiniz İşlemi Seçiniz : ");
+				
+					request = inp.nextInt();
+				
+						switch (request) {
+				
+						case 1:
+						
+							System.out.print("Yatırmak İstediğiniz Para Miktarı : ");
+							price = inp.nextDouble();
+							balance += price;
+						
+						break;
+						
+						case 2:
+						
+							System.out.println("Çekmek İstediğiniz Para Miktarı : ");
+							price = inp.nextDouble();
+						
+								if (balance < price) {
+							
+									System.out.println("Yetersiz Bakiye");
+
+								}else {
+							
+									balance -= price;
+						
+								}
+						
+						break;
+						
+						case 3:
+						
+							System.out.println("Mevcut Bakiyeniz : "+ balance);
+						
+						break;
+						}
+				
+				
+				}while(request != 4);
+				
+						System.out.println("Tekrar Görüşmek Üzere");
+				
+			     break;
+				
+				}else
+				--right;
+			
+					System.out.println("Hatalı Giriş Yaptınız, Tekrar Deneyiniz");
+			
+						if( right == 0) {
+							System.out.println("Hesap Bloke Olmuştur, Lütfen Bankanız ile İletişime Geçiniz.");
+					
+						}else {
+							System.out.println("Kalan Hakkınız : " + right);
+					
+				}	
+			}
+		}	
+  }
