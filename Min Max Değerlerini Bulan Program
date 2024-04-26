@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class fonksiyonlar {
+
+	public static void main(String[] args) {
+		
+		Scanner inp = new Scanner(System.in);
+		
+		int a, number, max = 0, min = 0, smallest = 0;
+		System.out.print("How Many Numbers Will You Enter : ");
+		a = inp.nextInt();
+		
+		for (int i = 1; i<=a; i++) {
+			
+				System.out.print(i + ". Enter The Number: ");
+				number = inp.nextInt(); 
+			
+				if (number>max) {
+				
+					max = number;
+				
+				}else {
+				
+					min = number;
+				
+				}if (min<=smallest) {
+				
+					smallest = min;
+				}
+			}
+		
+		System.out.println("Largest Number : "+max);
+		System.out.println("Smallest Number : "+min);
+	}
+}
