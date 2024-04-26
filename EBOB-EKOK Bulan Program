@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class fonksiyonlar {
+
+	public static void main(String[] args) {
+		
+		Scanner inp = new Scanner(System.in);
+		int n1, n2, ebob = 1, ekok = 1;
+		int i = 1, j = 1;
+		
+		System.out.print("N1 Sayısını Giriniz : ");
+		n1 = inp.nextInt();
+		
+		System.out.print("N2 Sayısısnı Giriniz : ");
+		n2 = inp.nextInt();
+		
+		if (n2>n1) {
+			
+			while (i <= n1) {
+				
+				if ((n1 % i == 0)&&(n2 % i == 0)) {
+					
+					ebob = i;
+				}
+				
+				i++;
+			}
+			
+			System.out.println("Girilen Sayıların En Büyük Ortak Böleni : "+ ebob);
+			
+		}else {
+			
+			while (i <= n2) {
+				
+				if ((n2 % i == 0)&&(n1 % i == 0)) {
+					
+					ebob = i;
+				}
+				
+				i++;
+			}
+			
+			System.out.println("Girilen Sayıların En Büyük Ortak Böleni : "+ebob);
+		}
+		
+			ekok = (n1*n2)/ebob;
+			System.out.println("Girilen Sayıarın En Küçük Ortak Katı : "+ekok);
+	}
+}
