@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class fonksiyonlar {
+
+	public static void main(String[] args) {
+		
+		Scanner inp = new Scanner(System.in);
+		
+		
+      
+		int number1=0, number2=1, result=0;
+        System.out.println("Which Element of the Fibonacci Series Do You Want to See : ");
+        int n = inp.nextInt();
+        
+        System.out.print(number1 + " " + number2);
+        
+        for(int i=1; i<=n; i++)
+        {
+        	
+            result = number1 + number2;
+            System.out.print(" " + result);
+            number1 = number2;
+            number2 = result ;
+            
+        }  
+	    }
+   }
